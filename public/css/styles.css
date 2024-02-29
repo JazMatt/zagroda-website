@@ -1,0 +1,71 @@
+.logo-nav {
+  height: 8rem;
+  background-color: #597E52;
+  text-align: center;
+}
+
+.buttons-nav {
+  height: 2.5rem;
+  background-color: #C6A969;
+  display: flex;
+  align-items:center;
+  padding: 0.2rem 4rem;
+}
+
+.header-button {
+  text-decoration: none;
+  color: white;
+  background-color: #C6A969;
+  margin: 0.3rem;
+  line-height: 90%;
+  padding: 0.5rem 3rem;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.451);
+  border-radius: 5px;
+}
+
+.font-20 {
+  font-size: 15pt;
+  font-weight: 350;
+}
+
+.animated {
+  transition: transform 0.1s ease;
+}
+
+.animated:hover {  
+  transform: scale(1.03);
+}
+
+.animated {
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s, transform 0.2s ease-out;
+}
+
+/* Hover effect */
+.animated:hover {
+    background-color: #597E52;
+    transform: translateY(-2px);
+}
+
+/* Active (clicked) effect */
+.animated:active {
+    transform: translateY(1px);
+}
+
+/* Optional: Add more styles to enhance the animated appearance */
+.animated:focus {
+    box-shadow: 0 0 0 3px white; /* Add a focus outline */
+}
+
+/* Optional: Add a subtle shadow for depth */
+.animated {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional: Add a transition to the box-shadow for a smoother effect */
+.animated:hover, .animated:focus, .animated:active {
+    transition: background-color 0.3s, transform 0.2s ease-out, box-shadow 0.2s ease-out;
+}
