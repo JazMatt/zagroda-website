@@ -41,16 +41,17 @@ body {
 .animated {
   cursor: pointer;
   transition: transform 0.2s ease, background-color 0.1s ease-in-out, color 0.4s ease-in-out; /* Adjust transition timing function */
+  transform-origin: center;
 }
 
 .animated:hover {
-  transform: scale(1.04);
+  transform: scale(1.0);
   background-color: white;
   color:black;
-  font-weight: 500;
+  
 }
 .animated:active {
-  transform: scale(1.0); /* Slightly shrink the button on click */
+  transform: scale(0.97); /* Slightly shrink the button on click */
   transition: transform 0.1s ease; /* Add transition property for click */
 }
 
@@ -60,4 +61,50 @@ body {
   padding: 6rem 25%;
   text-align: justify;
   font-size: 14pt;
+}
+
+.bg {
+  width: 100%;
+  margin-top: -16px;
+  position: relative;
+  z-index: -1;
+}
+
+.big-logo {
+  position:absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+}
+
+img {
+  user-select: none;
+  pointer-events: none;
+}
+
+.start-animation {
+  opacity: 0;
+  animation: moveup 0.5s linear forwards;
+}
+
+.start-animation-2 {
+  opacity: 0;
+  animation: comeDown 3s ;
+}
+
+@keyframes moveup {
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes comeDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
