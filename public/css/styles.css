@@ -4,14 +4,12 @@ body {
 
 .bar-green {
   background-color: #597E52;
-  width: 100%;
   text-align: center;
 }
 
 .bar-thin-brown {
   background-color: #B19557;
   height: 0.5rem;
-  width: 100%;
 }
 
 .bar-buttons {
@@ -23,33 +21,78 @@ body {
 .header-button {
   text-decoration: none;
   color: white;
-  border: 1px solid #B19557;
   border-radius: 10px;
   padding: 0 3rem 0.2rem 3rem;
-  margin: 1rem 0rem;
   font-size: 18pt;
   font-weight: 400;
 }
 
-.bg {
+/* .bg {
   position: absolute;
   z-index: -1;
   width: 100%;
+  height: 100%;
+  object-fit:cover;
   left: 0;
+} */
+
+.bg {
+  background-image: url(../resources/home-bg.png);
+  background-size: cover; /* or contain, depending on your preference */
+  width: 100%; /* ensure the background covers the entire div */
+  height: 80rem; /* ensure the background covers the entire div */
+}
+
+.bg-2 {
+  background-image: url(../resources/home-bg-2.png);
+  background-size: cover; /* or contain, depending on your preference */
+  width: 100%; /* ensure the background covers the entire div */
+  height: 80rem; /* ensure the background covers the entire div */
 }
 
 .container-1 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 100vh;
+  height: 97vh;
 }
 
 .big-logo {
   display: block;
-  margin: 17rem auto 7rem auto;
+  margin: 0 auto 8rem auto;
+  padding-top: 25rem; 
 }
 
+.header {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+.btn-go-down {
+  margin-bottom: 15rem;
+}
+
+.cards-container {
+  display: flexbox;
+  width: 40%;
+  padding: 15rem 0 6rem 0;
+  margin: 0 auto;
+}
+
+.container-2 {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+.card {
+  background-color: transparent;
+  border: none;
+  display: inline-block;
+}
 
 
 /* ANIMATIONS */
