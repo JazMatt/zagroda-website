@@ -27,15 +27,6 @@ body {
   font-weight: 400;
 }
 
-/* .bg {
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  object-fit:cover;
-  left: 0;
-} */
-
 .bg {
   background-image: url(../resources/home-bg.png);
   background-size: cover; /* or contain, depending on your preference */
@@ -45,6 +36,13 @@ body {
 
 .bg-2 {
   background-image: url(../resources/home-bg-2.png);
+  background-size: cover; /* or contain, depending on your preference */
+  width: 100%; /* ensure the background covers the entire div */
+  height: 80rem; /* ensure the background covers the entire div */
+}
+
+.bg-3 {
+  background-image: url(../resources/home-bg-3.png);
   background-size: cover; /* or contain, depending on your preference */
   width: 100%; /* ensure the background covers the entire div */
   height: 80rem; /* ensure the background covers the entire div */
@@ -97,6 +95,10 @@ body {
 .desc {
   padding: 20rem 20%;
   font-size: 18pt;
+  text-align: justify;
+  color: white;
+  background-color: rgba(98, 78, 40, 0.217);
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.813);
 }
 
 
