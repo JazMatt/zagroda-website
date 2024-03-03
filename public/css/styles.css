@@ -1,0 +1,131 @@
+body {
+  background-color: #F1E4C3;
+}
+
+.bar-green {
+  background-color: #597E52;
+  width: 100%;
+  text-align: center;
+}
+
+.bar-thin-brown {
+  background-color: #B19557;
+  height: 0.5rem;
+  width: 100%;
+}
+
+.bar-buttons {
+  background-color: #C6A969;
+  text-align: center;
+  padding: 0.3em 0 0.5rem 0;
+}
+
+.header-button {
+  text-decoration: none;
+  color: white;
+  border: 1px solid #B19557;
+  border-radius: 10px;
+  padding: 0 3rem 0.2rem 3rem;
+  margin: 1rem 0rem;
+  font-size: 18pt;
+  font-weight: 400;
+}
+
+.bg {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  left: 0;
+}
+
+.container-1 {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+
+.big-logo {
+  display: block;
+  margin: 17rem auto 7rem auto;
+}
+
+
+
+/* ANIMATIONS */
+
+.animated, .animated-2, .animated-3 {
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.1s ease-in-out, color 0.4s ease-in-out; /* Adjust transition timing function */
+  transform-origin: center;
+}
+
+.animated:hover {
+  transform: scale(1.0);
+  background-color: white;
+  color:black;
+}
+
+.animated-2:hover {
+  transform: scale(1.05);
+}
+
+.animated-3:hover {
+  transform: scale(1.03);
+}
+
+.animated:active, .animated-2:active {
+  transform: scale(0.97); /* Slightly shrink the button on click */
+  transition: transform 0.1s ease; /* Add transition property for click */
+}
+
+.start-animation {
+  opacity: 0;
+  animation: moveup 0.5s linear forwards;
+}
+
+.start-animation-3 {
+  animation: comeUp 2s linear;
+}
+
+.start-animation-2 {
+  animation: comeDown 5s ;
+}
+
+.start-animation-3:hover {
+  cursor: pointer;
+}
+
+@keyframes moveup {
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes comeUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  80% {
+    transform: translateY(3%);
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes comeDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
