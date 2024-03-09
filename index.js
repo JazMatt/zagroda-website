@@ -5,6 +5,8 @@ const port = 3000;
 const app = express();
 app.use(express.static("public"));
 
+document.getElementsByClassName("go-home").addEventListener()
+
 app.get("/", async (req, res) => {
 
   // Getting offer description from file
@@ -19,6 +21,10 @@ app.get("/", async (req, res) => {
   
   res.render("home.ejs", { description: desc });
 });
+
+app.get("/icons", (req, res) => {
+  res.render("icons.ejs");
+}) 
 
 app.listen(port, () => {
   console.log("Server running on port " + port);
